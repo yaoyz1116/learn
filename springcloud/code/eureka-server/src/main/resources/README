@@ -1,0 +1,4 @@
+1.在start.spring.io官网上创建一个spring boot项目，只需要引入eureka-server依赖既可
+2.导入eclipse等ide编译器
+3.在项目的启动类上增加@EnableEurekaServer注解
+4.在application.properties中增加相关配置即可

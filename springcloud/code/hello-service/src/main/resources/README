@@ -1,0 +1,5 @@
+1.在start.spring.io官网上新建springboot项目，引入spring-web和eureka-discovery-client两个依赖
+2.将项目导入eclipse等ide中
+3.在项目的启动类中新加入注解@EnableDiscoveryClient
+4.新建一个control,用于接受外界的服务请求
+5.在配置文件中增加相关配置

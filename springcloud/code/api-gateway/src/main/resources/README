@@ -1,0 +1,4 @@
+1.在start.spring.io官网上新建springboot项目，引入zuul依赖
+2.在项目的启动类中添加注解@EnableZuulProxy
+3.在application.properties中添加相关配置，已经路由规则
+4.直接启动会报错，class找不到【com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect】，所以需要添加maven依赖hystrix-javanica

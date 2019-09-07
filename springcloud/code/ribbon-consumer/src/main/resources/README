@@ -1,0 +1,12 @@
+1.在start.spring.io官网上新建springboot项目，引入依赖spring-web,eureka-discovery-client,ribbon
+2.将项目导入eclipse等ide中
+3.在启动类上添加注解@EnableDiscoveryClient，同时创建bean[restTemplate]
+4.新建一个control,在此control中使用restTemplate调用其他微服务的接口
+5.设置application中的相关信息
+6.这时，如果启动项目的话，会报错【com/google/common/base/Function】这个找不到，所以还需要引入依赖guava
+
+在项目中引入hystrix，增加服务熔断功能
+1.引入依赖hystrix
+2.在启动类上增加注解@EnableCircuitBreaker
+3.新建一个命令类，用于实现hystrix,并且在control中调用
+4.此时直接启动会报错class找不到【com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect】，所以需要引入依赖【hystrix-javanica】
